@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="470" viewBox="0 0 1280 470" role="img" aria-labelledby="t d">
+  <title id="t">One psgs task, start to finish</title>
+  <desc id="d">Grill, card, your go, parallel backend and frontend lanes, checker gate with a two-round fix loop, fresh-context review, close. Every step writes into the project docs.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5B6AA8"/></marker>
+    <marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#F87171"/></marker>
+  </defs>
+  <rect width="1280" height="470" rx="24" fill="#0B1020"/>
+  <g font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="48" y="58" font-size="24" font-weight="700" fill="#E6EAF5">One task, start to finish</text>
+    <text x="48" y="86" font-size="15" fill="#8A94B3">Nothing starts before your "go". Lanes own separate files and run in parallel. Fixes that touch security pause for you.</text>
+
+    <!-- steps -->
+    <g font-size="15" font-weight="600" text-anchor="middle">
+      <!-- 1 grill -->
+      <rect x="48" y="150" width="138" height="78" rx="14" fill="#2A1F4D" stroke="#A78BFA"/>
+      <text x="117" y="183" fill="#EDE7FF">1 · Grill</text>
+      <text x="117" y="206" font-size="12" font-weight="500" fill="#B9A9F2">one question at a time</text>
+      <!-- 2 card -->
+      <rect x="214" y="150" width="138" height="78" rx="14" fill="#2A1F4D" stroke="#A78BFA"/>
+      <text x="283" y="183" fill="#EDE7FF">2 · Task card</text>
+      <text x="283" y="206" font-size="12" font-weight="500" fill="#B9A9F2">lanes · files · Contract</text>
+      <!-- 3 go -->
+      <path d="M440 150l46 39-46 39-46-39z" fill="#3A2A0A" stroke="#F59E0B"/>
+      <text x="440" y="186" fill="#FDE7B5">3 · "go"</text>
+      <text x="440" y="203" font-size="11" font-weight="500" fill="#E0B566">you approve</text>
+      <!-- 4 lanes -->
+      <rect x="518" y="112" width="160" height="62" rx="14" fill="#10304A" stroke="#38BDF8"/>
+      <text x="598" y="140" fill="#D9F3FF">4a · Backend lane</text>
+      <text x="598" y="160" font-size="12" font-weight="500" fill="#8CCBEA">writes the Contract</text>
+      <rect x="518" y="204" width="160" height="62" rx="14" fill="#10304A" stroke="#38BDF8"/>
+      <text x="598" y="232" fill="#D9F3FF">4b · Frontend lane</text>
+      <text x="598" y="252" font-size="12" font-weight="500" fill="#8CCBEA">builds against it</text>
+      <!-- 5 gate -->
+      <rect x="712" y="150" width="150" height="78" rx="14" fill="#0F3A30" stroke="#34D399"/>
+      <text x="787" y="180" fill="#D7FBEE">5 · Gate</text>
+      <text x="787" y="200" font-size="12" font-weight="500" fill="#8FE0C2">types · lint · tests · build</text>
+      <text x="787" y="216" font-size="12" font-weight="500" fill="#8FE0C2">secret scan · deps</text>
+      <!-- 6 review -->
+      <rect x="896" y="150" width="150" height="78" rx="14" fill="#2A1F4D" stroke="#A78BFA" stroke-dasharray="6 4"/>
+      <text x="971" y="183" fill="#EDE7FF">6 · Review</text>
+      <text x="971" y="206" font-size="12" font-weight="500" fill="#B9A9F2">fresh context, evidence</text>
+      <!-- 7 close -->
+      <rect x="1080" y="150" width="152" height="78" rx="14" fill="#1A2244" stroke="#3B4A85"/>
+      <text x="1156" y="183" fill="#E6EAF5">7 · Close</text>
+      <text x="1156" y="206" font-size="12" font-weight="500" fill="#A3ACC9">commit · ask to push</text>
+    </g>
+
+    <!-- arrows -->
+    <g stroke="#5B6AA8" stroke-width="2" fill="none" marker-end="url(#a)">
+      <path d="M186 189h24"/>
+      <path d="M352 189h38"/>
+      <path d="M486 189c14 0 14-46 28-46"/>
+      <path d="M486 189c14 0 14 46 28 46"/>
+      <path d="M678 143c18 0 16 46 30 46"/>
+      <path d="M678 235c18 0 16-46 30-46"/>
+      <path d="M862 189h30"/>
+      <path d="M1046 189h30"/>
+    </g>
+    <!-- fail loop -->
+    <path d="M787 228c0 60-160 70-189 40" fill="none" stroke="#F87171" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#r)"/>
+    <text x="700" y="300" font-size="12.5" font-weight="600" fill="#FCA5A5" text-anchor="middle">fail → fix round (max 2, then ask you)</text>
+
+    <!-- docs band -->
+    <rect x="48" y="344" width="1184" height="86" rx="16" fill="#121933" stroke="#26304F"/>
+    <text x="72" y="374" font-size="14" font-weight="700" fill="#E6EAF5">Written to files at every step: the docs are the memory</text>
+    <g font-size="13" font-weight="600" fill="#C9D0E8">
+      <rect x="72" y="388" width="150" height="28" rx="8" fill="#1A2244"/><text x="147" y="407" text-anchor="middle">docs/tasks/NN-*.md</text>
+      <rect x="234" y="388" width="130" height="28" rx="8" fill="#1A2244"/><text x="299" y="407" text-anchor="middle">PROGRESS.md</text>
+      <rect x="376" y="388" width="104" height="28" rx="8" fill="#1A2244"/><text x="428" y="407" text-anchor="middle">TEAM.md</text>
+      <rect x="492" y="388" width="130" height="28" rx="8" fill="#1A2244"/><text x="557" y="407" text-anchor="middle">SECURITY.md</text>
+      <rect x="634" y="388" width="226" height="28" rx="8" fill="#1A2244"/><text x="747" y="407" text-anchor="middle">security/private/ (gitignored)</text>
+    </g>
+    <text x="1208" y="407" font-size="13" fill="#8A94B3" text-anchor="end">a fresh session reads 2 files and continues</text>
+  </g>
+</svg>

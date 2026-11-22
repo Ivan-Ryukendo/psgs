@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use psgs, please cite it as below."
+title: "psgs: project starter guide skill"
+abstract: >-
+  An agent skill that turns an idea into a documented project and builds it
+  task by task with a multi-agent team (orchestrator, backend, frontend,
+  researcher, checker, reviewer) on user-chosen models across hosts, with
+  security checks built into every step and a pre-release audit.
+type: software
+authors:
+  - alias: "Ivan-Ryukendo"
+version: "0.1.0"
+date-released: "2026-11-23"
+license: MIT
+repository-code: "https://github.com/Ivan-Ryukendo/psgs"
+url: "https://github.com/Ivan-Ryukendo/psgs"
+keywords:
+  - agent-skills
+  - multi-agent
+  - claude-code
+  - codex
+  - opencode
+  - hermes-agent
+  - project-setup
+  - security-audit
+references:
+  - type: report
+    title: "Pre-Launch Security Audit (v2.0)"
+    authors:
+      - name: "Mayank Shah"
+    year: 2026
+    notes: "Security checklist areas 1 to 13 adapted from this document."
+  - type: standard
+    title: "OWASP Top 10:2025"
+    authors:
+      - name: "OWASP Foundation"
+    year: 2025
+    url: "https://owasp.org/Top10/"
+  - type: standard
+    title: "OWASP Top 10 for LLM Applications 2025"
+    authors:
+      - name: "OWASP Foundation"
+    year: 2025
+    url: "https://genai.owasp.org/llm-top-10/"

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="t d">
+  <title id="t">psgs: project starter guide skill</title>
+  <desc id="d">An idea becomes project docs, then a team of agents builds it. Works on Claude Code, Codex, OpenCode, Hermes Agent, Cursor and Gemini CLI.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1020"/>
+      <stop offset="1" stop-color="#141B38"/>
+    </linearGradient>
+    <linearGradient id="word" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A78BFA"/>
+      <stop offset="0.5" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#34D399"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#1C2547" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="420" rx="24" fill="url(#bg)"/>
+  <rect width="1280" height="420" rx="24" fill="url(#grid)" opacity="0.55"/>
+  <g font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="80" y="160" font-size="112" font-weight="800" fill="url(#word)" letter-spacing="-4">psgs</text>
+    <text x="84" y="206" font-size="26" font-weight="600" fill="#E6EAF5">project starter guide skill</text>
+    <text x="84" y="252" font-size="21" fill="#A3ACC9">An idea in. Docs, a plan and a team of agents out.</text>
+    <text x="84" y="282" font-size="21" fill="#A3ACC9">Built task by task, reviewed, security-checked. Any host, any model.</text>
+    <g font-size="15" font-weight="600">
+      <rect x="84" y="320" width="122" height="34" rx="17" fill="#1A2244" stroke="#2A3566"/><text x="145" y="342" text-anchor="middle" fill="#D6DBEE">Claude Code</text>
+      <rect x="216" y="320" width="82" height="34" rx="17" fill="#1A2244" stroke="#2A3566"/><text x="257" y="342" text-anchor="middle" fill="#D6DBEE">Codex</text>
+      <rect x="308" y="320" width="104" height="34" rx="17" fill="#1A2244" stroke="#2A3566"/><text x="360" y="342" text-anchor="middle" fill="#D6DBEE">OpenCode</text>
+      <rect x="422" y="320" width="132" height="34" rx="17" fill="#1A2244" stroke="#2A3566"/><text x="488" y="342" text-anchor="middle" fill="#D6DBEE">Hermes Agent</text>
+      <rect x="564" y="320" width="86" height="34" rx="17" fill="#1A2244" stroke="#2A3566"/><text x="607" y="342" text-anchor="middle" fill="#D6DBEE">Cursor</text>
+      <rect x="660" y="320" width="116" height="34" rx="17" fill="#1A2244" stroke="#2A3566"/><text x="718" y="342" text-anchor="middle" fill="#D6DBEE">Gemini CLI</text>
+    </g>
+  </g>
+  <!-- right: idea -> docs -> agents -->
+  <g font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600">
+    <rect x="880" y="70" width="320" height="64" rx="14" fill="#1A2244" stroke="#3B4A85"/>
+    <text x="1040" y="98" text-anchor="middle" fill="#E6EAF5">"A PWA to rate street food"</text>
+    <text x="1040" y="119" text-anchor="middle" fill="#8A94B3" font-weight="500">your idea</text>
+    <path d="M1040 134v26" stroke="#5B6AA8" stroke-width="2" stroke-dasharray="4 4"/>
+    <path d="M1034 154l6 8 6-8" fill="none" stroke="#5B6AA8" stroke-width="2"/>
+    <rect x="880" y="166" width="320" height="64" rx="14" fill="#1A2244" stroke="#3B4A85"/>
+    <text x="1040" y="194" text-anchor="middle" fill="#E6EAF5">AGENTS · PRD · DESIGN · SECURITY</text>
+    <text x="1040" y="215" text-anchor="middle" fill="#8A94B3" font-weight="500">docs = shared memory</text>
+    <path d="M1040 230v26" stroke="#5B6AA8" stroke-width="2" stroke-dasharray="4 4"/>
+    <path d="M1034 250l6 8 6-8" fill="none" stroke="#5B6AA8" stroke-width="2"/>
+    <g>
+      <rect x="880" y="262" width="100" height="40" rx="10" fill="#2A1F4D" stroke="#A78BFA"/><text x="930" y="287" text-anchor="middle" fill="#DDD2FF">Plan</text>
+      <rect x="990" y="262" width="100" height="40" rx="10" fill="#10304A" stroke="#38BDF8"/><text x="1040" y="287" text-anchor="middle" fill="#CDEFFF">Code ×2</text>
+      <rect x="1100" y="262" width="100" height="40" rx="10" fill="#0F3A30" stroke="#34D399"/><text x="1150" y="287" text-anchor="middle" fill="#CFF7E8">Check</text>
+      <rect x="935" y="312" width="210" height="40" rx="10" fill="#2A1F4D" stroke="#A78BFA" stroke-dasharray="5 4"/><text x="1040" y="337" text-anchor="middle" fill="#DDD2FF">Fresh-eyes review</text>
+    </g>
+    <g font-size="12" font-weight="500" fill="#8A94B3">
+      <circle cx="902" cy="378" r="5" fill="#A78BFA"/><text x="912" y="382">heavy</text>
+      <circle cx="972" cy="378" r="5" fill="#38BDF8"/><text x="982" y="382">mid</text>
+      <circle cx="1030" cy="378" r="5" fill="#34D399"/><text x="1040" y="382">light model</text>
+    </g>
+  </g>
+</svg>

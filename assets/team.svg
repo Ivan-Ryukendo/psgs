@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="500" viewBox="0 0 1280 500" role="img" aria-labelledby="t d">
+  <title id="t">The psgs team and how each model is reached</title>
+  <desc id="d">Six roles: Orchestrator, Backend, Frontend, Researcher, Checker, Reviewer, each on a heavy, mid or light model. Dispatch ladder: native subagent, then provider CLI, then a handoff file.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5B6AA8"/></marker>
+  </defs>
+  <rect width="1280" height="500" rx="24" fill="#0B1020"/>
+  <g font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="48" y="58" font-size="24" font-weight="700" fill="#E6EAF5">Six roles, the right model for each job</text>
+    <text x="48" y="86" font-size="15" fill="#8A94B3">You pick every model. Presets: Claude only · Codex only · Mixed (Reviewer from another provider).</text>
+
+    <!-- orchestrator -->
+    <rect x="290" y="118" width="260" height="76" rx="16" fill="#2A1F4D" stroke="#A78BFA" stroke-width="1.5"/>
+    <text x="420" y="150" font-size="17" font-weight="700" fill="#EDE7FF" text-anchor="middle">Orchestrator</text>
+    <text x="420" y="174" font-size="13" fill="#B9A9F2" text-anchor="middle">talks to you · plans · integrates · commits</text>
+
+    <g stroke="#5B6AA8" stroke-width="2" fill="none" marker-end="url(#a)">
+      <path d="M340 194v40"/><path d="M500 194v40"/>
+      <path d="M300 194c-90 30-160 30-180 160"/>
+      <path d="M540 194c90 30 160 30 180 160"/>
+    </g>
+
+    <!-- coders -->
+    <g text-anchor="middle">
+      <rect x="250" y="240" width="170" height="70" rx="14" fill="#10304A" stroke="#38BDF8"/>
+      <text x="335" y="270" font-size="16" font-weight="700" fill="#D9F3FF">Backend</text>
+      <text x="335" y="292" font-size="12.5" fill="#8CCBEA">data · API · auth · Contract</text>
+      <rect x="430" y="240" width="170" height="70" rx="14" fill="#10304A" stroke="#38BDF8"/>
+      <text x="515" y="270" font-size="16" font-weight="700" fill="#D9F3FF">Frontend</text>
+      <text x="515" y="292" font-size="12.5" fill="#8CCBEA">UI · mockups · DESIGN.md</text>
+
+      <rect x="40" y="360" width="170" height="70" rx="14" fill="#0F3A30" stroke="#34D399"/>
+      <text x="125" y="390" font-size="16" font-weight="700" fill="#D7FBEE">Researcher</text>
+      <text x="125" y="412" font-size="12.5" fill="#8FE0C2">lookups · versions · web</text>
+      <rect x="220" y="360" width="170" height="70" rx="14" fill="#0F3A30" stroke="#34D399"/>
+      <text x="305" y="390" font-size="16" font-weight="700" fill="#D7FBEE">Checker</text>
+      <text x="305" y="412" font-size="12.5" fill="#8FE0C2">runs gates · errors only</text>
+
+      <rect x="630" y="360" width="190" height="70" rx="14" fill="#2A1F4D" stroke="#A78BFA" stroke-dasharray="6 4"/>
+      <text x="725" y="390" font-size="16" font-weight="700" fill="#EDE7FF">Reviewer</text>
+      <text x="725" y="412" font-size="12.5" fill="#B9A9F2">fresh context · risky diffs</text>
+    </g>
+    <path d="M125 356v-8M305 356v-8" stroke="#5B6AA8" stroke-width="2"/>
+    <path d="M125 348h180" stroke="#5B6AA8" stroke-width="2"/>
+
+    <!-- legend -->
+    <g font-size="13" fill="#A3ACC9">
+      <circle cx="56" cy="466" r="6" fill="#A78BFA"/><text x="68" y="471">heavy (Opus, top GPT): judgment</text>
+      <circle cx="306" cy="466" r="6" fill="#38BDF8"/><text x="318" y="471">mid (Sonnet, GPT): code</text>
+      <circle cx="510" cy="466" r="6" fill="#34D399"/><text x="522" y="471">light (Haiku, small GPT): checkable work</text>
+    </g>
+
+    <!-- dispatch ladder -->
+    <rect x="880" y="118" width="352" height="344" rx="18" fill="#121933" stroke="#26304F"/>
+    <text x="904" y="152" font-size="17" font-weight="700" fill="#E6EAF5">Dispatch ladder</text>
+    <text x="904" y="174" font-size="13" fill="#8A94B3">first step that works, per lane</text>
+    <g>
+      <rect x="904" y="192" width="304" height="74" rx="12" fill="#1A2244"/>
+      <text x="922" y="218" font-size="14.5" font-weight="700" fill="#E6EAF5">1  Native subagent</text>
+      <text x="922" y="240" font-size="12" fill="#A3ACC9">Agent · spawn_agent · task tool</text>
+      <text x="922" y="256" font-size="12" fill="#A3ACC9">delegate_task (Hermes)</text>
+      <rect x="904" y="276" width="304" height="74" rx="12" fill="#1A2244"/>
+      <text x="922" y="302" font-size="14.5" font-weight="700" fill="#E6EAF5">2  Provider CLI or bridge</text>
+      <text x="922" y="324" font-size="12" fill="#A3ACC9">claude -p · codex exec · opencode run</text>
+      <text x="922" y="340" font-size="12" fill="#A3ACC9">hermes chat -q --oneshot</text>
+      <rect x="904" y="360" width="304" height="74" rx="12" fill="#1A2244"/>
+      <text x="922" y="386" font-size="14.5" font-weight="700" fill="#E6EAF5">3  Handoff file</text>
+      <text x="922" y="408" font-size="12" fill="#A3ACC9">paste into any tool, say "lane done"</text>
+      <text x="922" y="424" font-size="12" fill="#A3ACC9">Checker verifies the result</text>
+    </g>
+    <text x="1056" y="452" font-size="12" font-weight="600" fill="#F59E0B" text-anchor="middle">never a silent model swap</text>
+  </g>
+</svg>

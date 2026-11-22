@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-labelledby="t d">
+  <title id="t">How much of psgs each mode loads</title>
+  <desc id="d">Whole skill 88 KB. Audit loads about 41 KB, Setup 29 KB, Task 25 KB. The host first loads only SKILL.md at 5.7 KB, and a lane prompt is about 2 KB.</desc>
+  <rect width="1280" height="400" rx="24" fill="#0B1020"/>
+  <g font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="48" y="58" font-size="24" font-weight="700" fill="#E6EAF5">Load only what the mode needs</text>
+    <text x="48" y="86" font-size="15" fill="#8A94B3">Bytes of skill text read per mode (measured). Everything else stays on disk.</text>
+    <!-- axis: 0..88.3KB maps to x 300..1180 (880px) -->
+    <g font-size="15" font-weight="600" fill="#C9D0E8" text-anchor="end">
+      <text x="280" y="138">Whole skill</text>
+      <text x="280" y="186">Audit mode</text>
+      <text x="280" y="234">Setup mode</text>
+      <text x="280" y="282">Task mode</text>
+      <text x="280" y="330">Always loaded (SKILL.md)</text>
+    </g>
+    <rect x="300" y="118" width="880" height="28" rx="8" fill="#26304F"/>
+    <rect x="300" y="166" width="412" height="28" rx="8" fill="#A78BFA"/>
+    <rect x="300" y="214" width="289" height="28" rx="8" fill="#38BDF8"/>
+    <rect x="300" y="262" width="247" height="28" rx="8" fill="#38BDF8"/>
+    <rect x="300" y="310" width="57" height="28" rx="8" fill="#34D399"/>
+    <g font-size="14" font-weight="600">
+      <text x="1170" y="137" text-anchor="end" fill="#A3ACC9">88 KB · 100%</text>
+      <text x="724" y="185" fill="#E6EAF5">41 KB · 47%</text>
+      <text x="601" y="233" fill="#E6EAF5">29 KB · 33%</text>
+      <text x="559" y="281" fill="#E6EAF5">25 KB · 28%</text>
+      <text x="369" y="329" fill="#E6EAF5">5.7 KB · 6%</text>
+    </g>
+    <text x="48" y="376" font-size="13" fill="#8A94B3">Each lane prompt is ~2 KB and self-contained, and reports return findings, never file dumps.</text>
+  </g>
+</svg>
